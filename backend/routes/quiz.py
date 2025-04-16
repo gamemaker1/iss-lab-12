@@ -1,7 +1,7 @@
-from fastapi import APIRouter, Body
+from fastapi import APIRouter, Body, HTTPException
 import random
 
-router = APIRouter(tags=["quiz"])
+router = APIRouter(prefix="/quiz", tags=["quiz"])
 
 # I actually could have added this to a collection in mongodb
 questions = [

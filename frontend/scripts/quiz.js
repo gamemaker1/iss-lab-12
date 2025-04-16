@@ -129,6 +129,8 @@ resetBtn.addEventListener("click", () => {
   updateAttempts();
   resetBtn.classList.add("hidden");
   loadQuestion();
+  // Add error handling
+  feedback.textContent = ""; // Clear previous error messages
 });
 
 window.addEventListener("DOMContentLoaded", async () => {
