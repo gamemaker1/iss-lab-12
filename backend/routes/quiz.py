@@ -1,4 +1,4 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Body
 import random
 
 router = APIRouter(tags=["quiz"])
@@ -38,32 +38,33 @@ questions = [
 ]
 
 game_state = {"high_score": 0}
+
 # god would hate me for not dockerizing this repo
 @router.get("/question")
 async def get_question():
-    question = questions[1]
+    question = random.choice(questions)  # Changed from hardcoded index to random
     return {
         "id": question["id"],
         "text": question["text"],
         "options": question["options"]
     }
 
-@router.get("/answer")
-async def submit_answer(data: dict):
+@router.post("/answer")  # Fixed: changed from GET to POST as it's modifying state
+async def submit_answer(data: dict = Body(...)):  # Fixed: added Body for POST request
     question_id = data.get("id")
     answer = data.get("answer")
     score = data.get("score", 0)
-
+    
     question = next((q for q in questions if q["id"] == question_id), None)
     if not question:
         return {"error": "Invalid question ID"}
-
+    
     is_correct = answer == question["correct"]
     if is_correct:
         score += 10
         if score > game_state["high_score"]:
             game_state["high_score"] = score
-
+    
     return {
         "is_correct": is_correct,
         "correct_answer": question["correct"],
