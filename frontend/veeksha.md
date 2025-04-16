@@ -1,6 +1,6 @@
 index.html - Use UTF-8 encoding instead of ISO-8859-1 (can cause potential issues)
 
-news.html -
+news.js -
 1. Missing Event Listeners
 2. RSS to JSON Usage
 3. Missing Error Handling
