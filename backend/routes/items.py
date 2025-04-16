@@ -3,7 +3,7 @@ from models import Item
 from bson import ObjectId
 from db import init_db
 
-router = APIRouter(prefix="/items")
+router = APIRouter()
 
 async def get_items_collection():
     from db import init_db
