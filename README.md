@@ -26,13 +26,11 @@
 
 ### Add the names of the members and roll numbers of your team below
 
-- Name : Roll Number
-
-Vedant Rahul Kulkarni : 2024101140
-Kushagra Agrawal : 2024101110
-Devshree Vyas : 2024111003
-Devashree Kulkarni : 2024111013
-Sai Veeksha Tavva : 2024113021
+- Vedant Rahul Kulkarni: 2024101140
+- Kushagra Agrawal: 2024101110
+- Devshree Vyas: 2024111003
+- Devashree Kulkarni: 2024111013
+- Sai Veeksha Tavva: 2024113021
 
 ### Table to keep track
 
@@ -48,7 +46,7 @@ Sai Veeksha Tavva : 2024113021
 | 8   | Added container (items.html)             | Devashree     | Devashree    |
 | 9   | Link in base url is wrong (analytics.js) | Vedant        | Veeksha      |
 | 10  | Incomplete Loading State                 | Veeksha       | Veeksha      |
-| 11  | Deleting home.js                         | Veeksha       | -            |
+| 11  | Deleting home.js                         | Veeksha       | Veeksha      |
 | 12  | UTF-8 instead of ISO-8859-1 (index.html) | Veeksha       | Veeksha      |
 | 13  | Missing Event Listeners (news.js)        | Veeksha       | Veeksha      |
 | 14  | RSS to JSON Usage (news.js)              | Veeksha       | Veeksha      |
@@ -76,3 +74,10 @@ Sai Veeksha Tavva : 2024113021
 | 36  | Fixed router prefix (quiz.py)            | Devashree     | Devashree    |
 | 37  | Reset button fixed while loading         | Devashree     | Devashree    |
 | 38  | Changed name int to str (model.py)       | Devashree     | Devashree    |
+| 39  | Correctly create APIRouter (items.py)    | Vedant        | Vedant       |
+| 40  | Delete duplicate function (items.py)     | Vedant        | Vedant       |
+| 41  | Added search functionality (profile.js)  | Vedant        | Vedant       |
+| 42  | Fixed create functionality (items.js)    | Vedant        | Vedant       |
+| 43  | Show and hide loading div (profile.js)   | Vedant        | Vedant       |
+| 44  | Show and hide loading div (items.js)     | Vedant        | Vedant       |
+| 45  | Made `Item` a `BaseModel` (models.py)    | Vedant        | Vedant       |
