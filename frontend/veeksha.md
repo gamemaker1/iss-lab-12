@@ -12,3 +12,7 @@ news.html -
 home.js -
 1. No actual purpose for it because we have no actual working of the home page apart from going to another page
 
+styles.css - MADE IT
+
+analytics.js - 
+1. The link in the base url is wrong - 8000 is the correct one
