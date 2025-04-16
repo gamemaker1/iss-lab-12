@@ -1,6 +1,6 @@
-
+const baseURL = "http://localhost:8000"; // baseURL was not added previously but used in the code later
 async function loadUsers() {
-  const res = await fetch(`/users`);
+  const res = await fetch(`${baseURL}/users`); //wrong url again
   const users = await res.json();
   const list = document.getElementById("userList");
   list.innerHTML = "";
@@ -40,7 +40,7 @@ document.getElementById("search").addEventListener("input", async (e) => {
     const deleteBtn = document.createElement("button");
     deleteBtn.textContent = "Delete";
     deleteBtn.onclick = async () => {
-      await fetch(`/users/${user._id}`, { method: "PATCH" });
+      await fetch(`${baseURL}/users/${user._id}`, { method: "DELETE" }); // wrong fetch url
       loadUsers();
     };
 
@@ -55,7 +55,7 @@ document.getElementById("userForm").addEventListener("submit", async (e) => {
   e.preventDefault();
   const username = document.getElementById("username").value;
   const bio = document.getElementById("bio").value;
-  await fetch(`/users`, {
+  await fetch(`${baseURL}/users`, { //again wrong url
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ username, bio })

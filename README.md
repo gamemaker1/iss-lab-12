@@ -38,6 +38,10 @@
 | 4   | Missing Error Handling                   | Veeksha       | Veeksha      |
 | 5   | Empty Image Source Handling              | Veeksha       | Veeksha      |
 | 6   | Requirements file did not exist          | Vedant        | Vedant       |
+| 3   | Requirements file did not exist          | Vedant        | Vedant       |
+| 4   |                                          |               |              |
+| 5   |                                          |               |              |
+| 6   |                                          |               |              |
 | 7   |                                          |               |              |
 | 8   |                                          |               |              |
 | 9   |                                          |               |              |
