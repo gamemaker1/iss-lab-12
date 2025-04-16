@@ -7,3 +7,4 @@ quiz.html didn't have news in navbar
 news.html didn't have quiz.html in navbar
 index.html didn't have quiz in navbar
 analytics.html didn't have navbar
+news.py added, as news page didn't have a backend
