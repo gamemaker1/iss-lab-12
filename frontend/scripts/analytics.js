@@ -2,7 +2,7 @@ const baseURL = "http://localhost:8000";
 
 async function loadAnalytics() {
   try {
-    const res = await fetch(`${baseURL}/analytics`);
+    const res = await fetch(`${baseURL}/analytics/`);   //fixed the syntax
     if (!res.ok) {
       console.error("Failed to fetch analytics data");
       return;
