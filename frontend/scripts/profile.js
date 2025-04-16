@@ -1,5 +1,7 @@
 const baseURL = "http://localhost:8000"; // baseURL was not added previously but used in the code later
 async function loadUsers(query = "") {
+  const loading = document.getElementById('loading');
+  loading.style.display = "block";
   const res = await fetch(`${baseURL}/users/`); //wrong url again
   const users = await res.json();
   const list = document.getElementById("userList");
@@ -9,7 +11,6 @@ async function loadUsers(query = "") {
     user.username.toLowerCase().includes(query.toLowerCase())
   )
   document.getElementById("userCount").textContent = `Total users: ${filteredUsers.length}`;
-  // why did I give such a weird task
   filteredUsers.forEach(user => {
     const li = document.createElement("li");
     li.textContent = `${user.username}: ${user.bio}`;
@@ -24,6 +25,7 @@ async function loadUsers(query = "") {
     li.appendChild(deleteBtn);
     list.appendChild(li);
   });
+  loading.style.display = "none";
 }
 
 document.getElementById("search").addEventListener("input", async (e) => {

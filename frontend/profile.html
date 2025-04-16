@@ -15,16 +15,18 @@
     <a href="quiz.html">Quiz</a> <!--Quiz wasn't in navbar-->
   </nav>
   <div class="container">
-    <!-- Please suggest some good music, I am tired of my playlist -->
-    <p id="userCount">Total users: 0</p> <!-- id mismatch in profile.js and profile.html-->
-    <input type="text" id="search" placeholder="Search users..." />
     <h1>🧑 User Profiles</h1>
+    <p id="userCount">Total users: 0</p> <!-- id mismatch in profile.js and profile.html-->
+
     <form id="userForm">
       <input type="text" id="username" placeholder="Username" required />
       <input type="text" id="bio" placeholder="Bio" required />
       <button type="submit">Add User</button>
     </form>
+
+    <input type="text" id="search" placeholder="Search users..." />
     <ul id="userList"></ul>
+    <div id="loading" style="display: none;">Loading...</div>
   </div>
 
   <script src="scripts/profile.js"></script> <!-- wrong was path given-->

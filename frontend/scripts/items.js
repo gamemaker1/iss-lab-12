@@ -1,6 +1,8 @@
 const baseURL = "http://localhost:8000";
 
 async function loadItems(searchTerm = "") {
+  const loading = document.getElementById('loading');
+  loading.style.display = "block";
   const res = await fetch(`${baseURL}/items/`);
   const data = await res.json();
   const list = document.getElementById("itemList");
@@ -21,6 +23,8 @@ async function loadItems(searchTerm = "") {
     li.appendChild(del);
     list.appendChild(li);
   });
+
+  loading.style.display = "none";
 }
 
 async function createItem(event) {

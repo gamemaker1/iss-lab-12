@@ -18,16 +18,14 @@
   <div class="container">
     <h1>📦 Items</h1>
     <p id="itemCount">Total items: 0</p>
-    
+
     <form id="itemForm" onsubmit="createItem(event)">
       <input type="text" id="name" placeholder="Item name" required />
       <input type="text" id="description" placeholder="Item description" required />
       <button type="submit">Add Item</button>
     </form>
-    
-    <input type="text" id="search" placeholder="Search items..." />
 
-    
+    <input type="text" id="search" placeholder="Search items..." />
     <ul id="itemList" class="items-scrollable"></ul>
     <div id="loading" style="display: none;">Loading...</div>
   </div>
