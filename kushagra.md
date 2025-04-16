@@ -10,3 +10,4 @@
 10) news.py added, as news page didn't have a backend
 11) users.py typo fixed in delete_user function
 12) prefix in analytics added in main.py
+13) id mismatch in profile.js and profile.html, html had userCounts while js was searching for userCount
