@@ -8,7 +8,7 @@ let allArticles = [];
 async function loadNews(searchTerm = "", source = "all", reset = false) {
   const list = document.getElementById("newsList");
   const loading = document.getElementById("loading");
-  const initialMessage = document.getElementById("initialMessage");
+  // const initialMessage = document.getElementById("initialMessage"); removed this line as redundant and not used anywhere else
   
   if (reset) {
     allArticles = [];
