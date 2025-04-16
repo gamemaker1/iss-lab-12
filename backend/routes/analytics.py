@@ -26,7 +26,7 @@ async def get_analytics():
     async for item in items_collection.find():
         items.append(item)
     # damm this is the last lab
-    users = []                                      # Fixed: removed hardcoded list ["A1","B2","C3" 
+    users = []                                      # Fixed: removed hardcoded list ["A1","B2","C3"] 
     async for user in users_collection.find():
         users.append(user)
     
