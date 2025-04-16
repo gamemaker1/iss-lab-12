@@ -8,7 +8,7 @@ from routes.users import router as users_router
 app = FastAPI()
 
 app.include_router(items_router, prefix="/items")
-app.include_router(analytics_router)
+app.include_router(analytics_router,prefix="/analytics") #prefix added
 app.include_router(quiz_router)
 app.include_router(users_router, prefix="/users")
 
