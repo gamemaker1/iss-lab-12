@@ -34,9 +34,9 @@
 |-----|------------------------------------------|---------------|--------------|
 | 1   | Style.css is not filled                  | Narain        | Whole Team   |
 | 2   | <!doctype> tag syntax was wrong          | Devshree      | Vedant       |
-| 3   |                                          |               |              |
-| 4   |                                          |               |              |
-| 5   |                                          |               |              |
+| 3   | API response property reference(fallback)| Veeksha       | Veeksha      |
+| 4   | Missing Error Handling                   | Veeksha       | Veeksha      |
+| 5   | Empty Image Source Handling              | Veeksha       | Veeksha      |
 | 6   | Requirements file did not exist          | Vedant        | Vedant       |
 | 7   |                                          |               |              |
 | 8   |                                          |               |              |
