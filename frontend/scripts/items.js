@@ -1,7 +1,7 @@
 const baseURL = "http://localhost:8000";
 
 async function loadItems(searchTerm = "") {
-  const res = await fetch(`${baseURL}/items`);
+  const res = await fetch(`${baseURL}/items/`);
   const data = await res.json();
   const list = document.getElementById("itemList");
   list.innerHTML = "";
@@ -21,6 +21,24 @@ async function loadItems(searchTerm = "") {
     li.appendChild(del);
     list.appendChild(li);
   });
+}
+
+async function createItem(event) {
+  event.preventDefault()
+
+  await fetch(`${baseURL}/items/`, {
+    method: "POST",
+    body: JSON.stringify({
+      name: document.getElementById('name').value,
+      description: document.getElementById('description').value
+    }),
+    headers: {
+      "content-type": "application/json"
+    }
+  });
+  loadItems(document.getElementById("search").value);
+
+  return false
 }
 
 async function deleteItem(id) {
